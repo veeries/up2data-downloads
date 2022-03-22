@@ -19,5 +19,7 @@ OBS: Add AzCopy to your envinronment variables for the scripts to work.
 ### PYTHON
 #### STATUS
 *Working script example that generates the Auth Token and blob URLs automatically;
+
+
 *.pfx certificate decoding to base64 still not automated and must be done manually using: 
 "https://www.base64encode.org/"

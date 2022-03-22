@@ -9,7 +9,7 @@ class Up2data:
 
     def __init__(self):
         config = configparser.ConfigParser()
-        config.read("<config file path>")
+        config.read("<config file path>") # config.ini
         self.clientId = config.get('KEYS', 'clientId')
         self.clientSecret = config.get('KEYS', 'clientSecret')
         self.password = config.get('KEYS', 'password')
@@ -29,12 +29,12 @@ class Up2data:
         today = datetime.date.today()
         weekends = ['Saturday', 'Sunday']
         lookup_date = True
-        n=1
+        n = 1
         while lookup_date:
             yesterday = today - datetime.timedelta(days=n)
             yesterday_name = yesterday.strftime('%A')
             if yesterday_name in weekends:
-                n = n+1
+                n += 1
             else:
                 lookup_date = False
         string_date = self.format_date(yesterday)
@@ -132,7 +132,7 @@ class Up2data:
         """        
         info_type = self.market_channels[channel_info]
         prefix = f'prefix={str_date}/{channel_info}/{info_type}'
-        source_url = blob_url+'&'+prefix
+        source_url = f'{blob_url}&{prefix}'
         return source_url
 
     def generate_azcopy_cmd(self, source_url: str) -> str:

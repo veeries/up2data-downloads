@@ -10,7 +10,9 @@ for those that need to mantain a history of the data locally or on their respect
 ## AZCOPY
 AzCopy is a tool that helps with copying blobs and files from storage to storage,
 more can be read on it on the official documentation here:
-"https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"
+"https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10"  
+
+
 OBS: Add AzCopy to your envinronment variables for the scripts to work.
 
 ## LANGUAGES

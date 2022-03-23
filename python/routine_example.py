@@ -3,7 +3,7 @@ from up2data import Up2data
 up2data = Up2data()
 
 # Getting the latest available closed day date
-string_date = up2data.get_date()
+string_date = up2data.get_last_weekday()
 
 # Wanted channels and information
 channel = 'Market Channels'

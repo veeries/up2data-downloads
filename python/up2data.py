@@ -20,7 +20,7 @@ class Up2data:
             'Currency': 'SettlementPrice'
         }
 
-    def get_date(self) -> str:
+    def get_last_weekday(self) -> str:
         """The functions returns the last business/weekday
 
         Returns:
